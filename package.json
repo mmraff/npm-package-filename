@@ -17,7 +17,7 @@
   "devDependencies": {
     "chai": "^4.3.4",
     "mocha": "^7.2.0"
-  }
+  },
   "scripts": {
     "test": "mocha"
   },
@@ -28,5 +28,5 @@
     "tarball",
     "tracker",
     "version"
-  ],
+  ]
 }

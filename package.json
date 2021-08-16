@@ -1,0 +1,32 @@
+{
+  "name": "npm-package-filename",
+  "version": "0.0.1",
+  "description": "Tools for getting key data into and out of a package tarball filename",
+  "main": "index.js",
+  "files": [],
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mmraff/npm-package-filename.git"
+  },
+  "keywords": [
+    "download",
+    "npm-two-stage",
+    "semver",
+    "tarball",
+    "tracker",
+    "version"
+  ],
+  "author": "mmraff",
+  "license": "Artistic-2.0",
+  "bugs": {
+    "url": "https://github.com/mmraff/npm-package-filename/issues"
+  },
+  "homepage": "https://github.com/mmraff/npm-package-filename#readme",
+  "devDependencies": {
+    "chai": "^4.3.4",
+    "mocha": "^7.2.0"
+  }
+}

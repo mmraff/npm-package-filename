@@ -1,7 +1,6 @@
-# Logs
+node_modules/
+SCRATCH/
+TODO.txt
 logs
 *.log
 npm-debug.log*
-
-# Dependency directories
-node_modules/

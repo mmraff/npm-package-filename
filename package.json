@@ -2,14 +2,24 @@
   "name": "npm-package-filename",
   "version": "1.0.0",
   "description": "Tools for getting key data into and out of a package tarball filename",
-  "main": "index.js",
-  "files": [],
-  "scripts": {
-    "test": "mocha"
-  },
+  "author": "mmraff",
+  "license": "Artistic-2.0",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mmraff/npm-package-filename.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mmraff/npm-package-filename/issues"
+  },
+  "homepage": "https://github.com/mmraff/npm-package-filename#readme",
+  "main": "index.js",
+  "files": [],
+  "devDependencies": {
+    "chai": "^4.3.4",
+    "mocha": "^7.2.0"
+  }
+  "scripts": {
+    "test": "mocha"
   },
   "keywords": [
     "download",
@@ -19,14 +29,4 @@
     "tracker",
     "version"
   ],
-  "author": "mmraff",
-  "license": "Artistic-2.0",
-  "bugs": {
-    "url": "https://github.com/mmraff/npm-package-filename/issues"
-  },
-  "homepage": "https://github.com/mmraff/npm-package-filename#readme",
-  "devDependencies": {
-    "chai": "^4.3.4",
-    "mocha": "^7.2.0"
-  }
 }

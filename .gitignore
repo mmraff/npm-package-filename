@@ -1,5 +1,7 @@
 node_modules/
+JOURNAL/
 SCRATCH/
+STOWED/
 TODO.txt
 logs
 *.log

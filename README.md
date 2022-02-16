@@ -1,10 +1,10 @@
-# npm-package-filename
+# @offliner/npm-package-filename
 Tools for getting key data into and out of a package tarball filename
 
 ## Overview
-The file-naming conventions implemented herein are peculiar to the purposes of the `npm-download-tracker` module and the `npm-two-stage` project.
+The file-naming conventions implemented herein are peculiar to the purposes of the `@offliner/npm-download-tracker` module and the `npm-two-stage` project.
 
-The context is a directory (any nested directories are of no interest) in which multiple gzipped tar archive files (*tarballs*) are stored. Each filename would uniquely identify a specific version of a specific npm-installable package. The `npm-download-tracker` module provides the means to associate key data (e.g., package name and version) and arbitrary additional pieces of information (e.g., SHA sum, resolved URL) with a given filename; but in the event that the associated data is lost, it would be desirable to recover at least the key data from the filename, so that we don't need to extract the metadata from inside the tarball.
+The context is a directory (any nested directories are of no interest) in which multiple gzipped tar archive files (*tarballs*) are stored. Each filename would uniquely identify a specific version of a specific npm-installable package. The `@offliner/npm-download-tracker` module provides the means to associate key data (e.g., package name and version) and arbitrary additional pieces of information (e.g., SHA sum, resolved URL) with a given filename; but in the event that the associated data is lost, it would be desirable to recover at least the key data from the filename, so that we don't need to extract the metadata from inside the tarball.
 
 This module provides a function for making tarball filenames from key data, and one for parsing key data from filenames created by the former. The key data can identify a package from the npm registry, from a git repository, or a URL to a tarball. The filenames created through this module are always URL-safe, even when the embedded data are not.
 
@@ -12,14 +12,14 @@ This module provides a function for making tarball filenames from key data, and 
 ## Install
 
 ```bash
-npm install npm-package-filename
+npm install @offliner/npm-package-filename
 ````
 
 
 ## Usage
 
 ```js
-const npf = require('npm-package-filename')
+const npf = require('@offliner/npm-package-filename')
 
 npf.makeTarballName({
   type: 'semver',
@@ -167,7 +167,7 @@ If you want to check an already-concatenated name and version, pass it as the on
 
 
 ## References
-1. [**API documentation for `npm install`**](https://docs.npmjs.com/cli/v7/commands/npm-install) See *Tarball requirements*.
+1. [**API documentation for `npm install`**](https://docs.npmjs.com/cli/v8/commands/npm-install) See *Tarball requirements*.
 2. [**Semantic Versioning 2.0.0**](https://semver.org/)
 
 ------

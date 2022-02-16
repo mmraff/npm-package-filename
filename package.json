@@ -21,6 +21,9 @@
   "scripts": {
     "test": "mocha"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "keywords": [
     "download",
     "npm-two-stage",
